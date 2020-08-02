@@ -98,7 +98,6 @@ const command = $('#command').val();
 console.log(`command is: ${command}`);
 });
 
-//Kevin replaced
 $('#register').on('click', () => {
     const user = $('#user').val();
     const password = $('#password').val();
