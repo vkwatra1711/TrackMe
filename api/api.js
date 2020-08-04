@@ -1,7 +1,7 @@
+const mongoose = require('mongoose')
+mongoose.connect('mongodb+srv://Vansh:Naman1703@cluster0.zdswl.mongodb.net',{useNewUrlParser: true, useUnifiedTopology: true });
 const Device = require('./models/device');
 const User = require('./models/user');
-const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://Vansh:Naman1703@cluster0.zdswl.mongodb.net',{useNewUrlParser: true, useUnifiedTopology: true });
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');

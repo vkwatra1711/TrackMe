@@ -1,6 +1,6 @@
 $('#navbar').load('navbar.html');
 $('#footer').load('footer.html');
-const API_URL = 'https://api-delta-seven.vercel.app';
+const API_URL = 'https://api-delta-seven.vercel.app/api';
 const currentUser = localStorage.getItem('user');
 
 
@@ -23,7 +23,7 @@ if (currentUser) {
             $('#historyContent').append(`
               <tr>
                 <td>${sensorData.ts}</td>
-                <td>${sensorData.temp}</td>
+                <td>${sensorData.temp}</td>'
                 <td>${sensorData.loc.lat}</td>
                 <td>${sensorData.loc.lon}</td>
               </tr>
